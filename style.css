@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2? family= Justo & family= Sarala:wght@400;700 & display=swap');
+ 
+* {  /* Siginifica que vai pegar no site inteiro */
+    transition: .3s ease-in-out; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* HEADER */
+
+.cabecalho {
+    background-color: #171629;
+    display: flex; /* Utilixa-se quando vai executar o flexbox */
+    flex-direction: row; /* Vai alinhar os itens na msm linha */
+    align-items: center; /* Centraliza o cabeçalho como um todo */
+    justify-content: space-around; /* Os itens ficam espassados */
+    padding: 10px;
+}
+
+.cabecalho-logo1 {
+    height: 60px;
+}
+
+.cabecalho-menu {
+    display: flex; /* ATENÇÃO - Não esquecer do DISPLAY:flex;. Para MANIPULAR os dados mais facilmente */
+    gap: 25px;
+}
+
+.item-menu {
+    color: #FFFFFF;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.item-menu:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */ 
+
+.conteudo {
+    background-color: #171629;
+    padding: 0px;
+}
+
+.conteudo-principal {
+    display: flex;
+    border-bottom: 1.0px solid white;
+     height: 85vh;
+    padding: 60px;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.conteudo-principal-imagem {
+    height: 135px;
+}
+
+.conteudo-principal-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteudo-principal-texto-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 55px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.conteudo-principal-texto-p {
+    font-family: 'Sarala', sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.conteudo-info-wpp {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+main .conteudo-info-wpp a {
+    color: white;
+}
+
+main .conteudo-info-wpp a span {
+    color: #00f545;
+}
+
+.conteudo-secundario {
+    display: flex;
+    background: white;
+    flex-direction: row;
+    text-align: right;
+    gap: 22px;
+    margin-top: 48px;
+    padding: 60px;
+}
+
+section .conteudo-secundario-escrito h6 {
+   color: #171629;
+   font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+section .conteudo-secundario-escrito h2 {
+    font-family: 'Montserrat';
+    color: #171629;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+}
+
+section .conteudo-secundario-escrito p {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #171629;
+}
+
+.link {
+    display: inline-block;
+    color: #171629;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 500;
+    font-family: 'Sarala', sans-serif;
+    padding: 15px 40px;
+    border: 1px solid #171629;
+    border-radius: 30px;
+}
+
+.link:hover {
+    background-color: #171629;
+    color: white;
+}
+
+.service {
+    margin-bottom: 50px;
+}
+
+section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section .service-site-comercial {
+    font-family: 'Righteous', cursive;
+    width: 390px;
+    height: 390px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding-top: 50px;
+}
+
+section .service-site-comercial h5 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+
+section .e-commerce {
+    font-family: 'Righteous', cursive;
+    background: #13e8d1;
+    color: #171629;
+    font-weight: 500;
+    text-align: center;
+    width: 390px;
+    padding-top: 50px;
+    height: 390px;
+}
+
+section .e-commerce h5 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+section .cartao-virtual {
+    color: #FFFFFF;
+    width: 390px;
+    padding-top: 50px;
+    text-align: center;
+    height: 390px;
+}
+
+section .cartao-virtual h5 {
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.rodape {
+    display: flex;
+    border: none;
+    border: 1px solid;
+    flex-direction: row;
+    text-align: center;
+    height: auto;
+    background-color: #171629;
+}
+
+.rodape-escrito {
+    margin-left: 25px;
+    margin-top: 50px;
+    display: flex;
+    height: 390px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+footer .rodape-escrito p {
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+   font: normal 15pt arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+}
+
+footer .rodape-escrito a {
+    gap: 55px;
+    padding: 13px;
+    font: normal 15pt arial;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+footer .rodape-escrito a:hover {
+    text-decoration: underline;
+}
+
+.rodape img {
+    margin-top: 50px;
+    display: flex;
+    margin-left: 80px;
+    height: 110px;
+}
